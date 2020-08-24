@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from 'reactstrap'
-import ModalForm from './empleados/Modal'
-import DataTable from './empleados/DataTable'
-import EmpleadoDataService from "./services/empleado.service";
+import ModalForm from './Modal'
+import DataTable from './DataTable'
+import EmpleadoDataService from "../services/empleado.service";
 
-import "./App.css";
-
-class App extends Component {
-  constructor(props) {
+class EmpleadoMantto extends Component {
+constructor(props) {
     super(props);
      this.state = {
       empleados: []
@@ -92,4 +90,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default EmpleadoMantto;
